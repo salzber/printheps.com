@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Printheps.com - Premium business cards, banners, brochures, large format, digital & offset printing. Fast, reliable, and high-quality." />
+    <title>Our Services | Printheps.com</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .aos-animate {
+            transition-delay: 0ms !important;
+        }
+
+        details[open] summary span {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body class="bg-blue-50 text-gray-800 overflow-x-hidden">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-black text-white py-2 text-xs md:text-sm">
+        <div
+            class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center gap-3">
+            <div class="flex items-center gap-4">
+                <a href="tel:+919815546976" class="flex items-center gap-1 hover:text-yellow-400 transition">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884l8 4.8a1 1 0 001.118 0l8-4.8A1 1 0 0017 4H3a1 1 0 00-.997 1.884z"></path>
+                        <path d="M18 8.118l-7.555 4.53a3 3 0 01-3.89 0L2 8.118V14a2 2 0 002 2h12a2 2 0 002-2V8.118z">
+                        </path>
+                    </svg>
+                    <span>+91 98155 46976</span>
+                </a>
+                <a href="mailto:info@printheps.com" class="flex items-center gap-1 hover:text-red-400 transition">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.4 3.5L12 13 5.4 7.5H18.6z" />
+                    </svg>
+                    <span>info@printheps.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-blue-100 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <span class="font-bold text-xl text-gray-900">Printheps<span class="text-red-400">.com</span></span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                    <li><a href="index.html" class="text-black font-semibold hover:text-blue-600 transition">Home</a>
+                    </li>
+                    <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 transition">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-blue-100 border-t">
+                <ul class="px-4 py-3 space-y-2 text-gray-700 font-medium">
+                    <li><a href="index.html" class="block py-2 text-black font-semibold">Home</a></li>
+                    <li><a href="about.html" class="block py-2 hover:text-blue-600">About</a></li>
+                    <li><a href="services.html" class="block py-2 hover:text-blue-600">Services</a></li>
+                    <li><a href="contact.html" class="block py-2 hover:text-blue-600">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner with Breadcrumb -->
+    <section class="bg-gray-100 py-16 px-6" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Our Services</h1>
+            <div class="inline-flex items-center justify-center space-x-2 text-sm">
+                <span class="bg-pink-200 text-pink-600 px-3 py-1 rounded-full font-semibold">HOME</span>
+                <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                <span class="bg-yellow-200 text-yellow-700 px-3 py-1 rounded-full font-semibold">SERVICES</span>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto relative rounded-2xl overflow-hidden shadow-2xl" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://images.pexels.com/photos/7014397/pexels-photo-7014397.jpeg"
+                alt="High-quality printing in action" class="w-full h-96 object-cover" loading="lazy" />
+
+            <!-- Decorative Shapes -->
+            <div class="absolute bottom-6 left-6 flex space-x-0">
+                <div class="w-20 h-20 rounded-l-full bg-green-500"></div>
+                <div class="w-20 h-20 rounded-r-full bg-yellow-400 -ml-4"></div>
+            </div>
+            <div class="absolute top-6 right-6 flex space-x-0">
+                <div class="w-20 h-20 rounded-l-full bg-red-500"></div>
+                <div class="w-20 h-20 rounded-r-full bg-blue-600 -ml-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+            <div data-aos="fade-right">
+                <span class="bg-red-500 text-white font-bold text-sm px-4 py-2 rounded-full inline-block mb-3">
+                    What We Offer
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                    Premium Printing Solutions for Every Need
+                </h2>
+            </div>
+
+            <div class="flex items-center space-x-4 mt-6 md:mt-0" data-aos="fade-left">
+                <div class="flex -space-x-5">
+                    <div class="w-16 h-16 rounded-l-[50%] bg-blue-600"></div>
+                    <div class="w-16 h-16 rounded-r-[50%] bg-red-600"></div>
+                </div>
+                <a href="#contact"
+                    class="bg-black text-white px-6 py-3 rounded-md font-bold hover:bg-gray-900 transition shadow-lg">
+                    GET A QUOTE
+                </a>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="mx-auto bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h-4m-4 0H7m12 0a2 2 0 002-2V9a2 2 0 00-2-2h-4m-4 14a2 2 0 01-2-2V9a2 2 0 012-2h4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Business Printing</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Professional business cards, brochures, flyers, letterheads, envelopes, and more.
+                </p>
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Learn More →</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="mx-auto bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <svg class="w-10 h-10 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M3 3h18v18H3V3zm4 4h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Large Format Printing</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Eye-catching banners, posters, signage, roll-up stands, and trade show displays.
+                </p>
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Learn More →</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="mx-auto bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <svg class="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5c-2.237 0-4.344-.62-6.158-1.7L12 14z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Custom Printing</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Personalized mugs, t-shirts, calendars, stickers, and unique promotional items.
+                </p>
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Learn More →</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="mx-auto bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Printing</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Fast, vibrant, high-quality prints — perfect for short runs and quick turnaround.
+                </p>
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Learn More →</a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group text-center" data-aos="fade-up" data-aos-delay="500">
+                <div class="mx-auto bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h2M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Offset Printing</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Cost-effective, consistent quality for bulk orders — magazines, catalogs, books.
+                </p>
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Learn More →</a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition group text-center" data-aos="fade-up" data-aos-delay="600">
+                <div class="mx-auto bg-red-100 rounded-full w-20 h-20 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <svg class="w-10 h-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Finishing & Binding</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    Professional binding, laminating, die-cutting, folding, and embossing.
+                </p>
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16 bg-white" data-aos="fade-up">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <!-- Left Image -->
+            <div class="relative rounded-tl-[120px] rounded-bl-[120px] overflow-hidden shadow-xl" data-aos="fade-right">
+                <img src="https://images.pexels.com/photos/7014413/pexels-photo-7014413.jpeg" alt="Expert checking print quality"
+                    class="w-full h-full object-cover" loading="lazy" />
+                <div class="absolute top-10 left-8 w-12 h-12 bg-red-500 rounded-b-full"></div>
+                <div class="absolute top-10 left-20 w-12 h-12 bg-blue-600 rounded-t-full"></div>
+                <div class="absolute bottom-10 left-8 w-16 h-16 bg-green-400 rounded-l-full"></div>
+                <div class="absolute bottom-6 left-24 w-16 h-16 bg-yellow-400 rounded-r-full"></div>
+            </div>
+
+            <!-- Right FAQs -->
+            <div class="space-y-8" data-aos="fade-left">
+                <span class="inline-block bg-green-500 text-white text-sm font-bold px-4 py-2 rounded-full">
+                    FAQs
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                    Got Questions?<br />We’ve Got Answers.
+                </h2>
+
+                <div class="space-y-4">
+                    <details class="bg-gray-50 rounded-xl p-5 shadow-sm cursor-pointer border-l-4 border-green-500" data-aos="fade-up" data-aos-delay="100">
+                        <summary class="font-semibold flex justify-between items-center list-none text-gray-800">
+                            How much does it cost to print a magazine?
+                            <span class="text-select-none transition-transform duration-300">+</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600">
+                            Pricing depends on page count, paper quality, quantity, and finishing. We offer competitive rates — contact us for a free quote!
+                        </p>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-xl p-5 shadow-sm cursor-pointer border-l-4 border-blue-500" data-aos="fade-up" data-aos-delay="200">
+                        <summary class="font-semibold flex justify-between items-center list-none text-gray-800">
+                            What printing methods do you use?
+                            <span class="text-xl font-bold select-none transition-transform duration-300">+</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600">
+                            We specialize in <strong>digital printing</strong> (fast & flexible), <strong>offset printing</strong> (bulk & cost-effective), and <strong>large format</strong> for banners & signage.
+                        </p>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-xl p-5 shadow-sm cursor-pointer border-l-4 border-yellow-500" data-aos="fade-up" data-aos-delay="300">
+                        <summary class="font-semibold flex justify-between items-center list-none text-gray-800">
+                            How do I get a quote?
+                            <span class="text-xl font-bold select-none transition-transform duration-300">+</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600">
+                            Call us at <strong>+91 98155 46976</strong>, email <strong>info@printheps.com</strong>, or fill out our contact form. We respond within 1 hour!
+                        </p>
+                    </details>
+
+                    <details class="bg-gray-50 rounded-xl p-5 shadow-sm cursor-pointer border-l-4 border-red-500" data-aos="fade-up" data-aos-delay="400">
+                        <summary class="font-semibold flex justify-between items-center list-none text-gray-800">
+                            What file formats do you accept?
+                            <span class="text-xl font-bold select-none transition-transform duration-300">+</span>
+                        </summary>
+                        <p class="mt-3 text-gray-600">
+                            We accept <strong>PDF (preferred)</strong>, AI, PSD, EPS, and high-res JPG/PNG. CMYK color mode, 300 DPI, with bleed.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="contact" class="bg-black text-white py-20 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center px-4" data-aos="zoom-in">
+            <span class="inline-block bg-red-500 px-5 py-2 rounded-full font-bold mb-4">Ready to Print?</span>
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Get Your Free Quote Today</h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+919815546976"
+                    class="bg-white text-black py-3 px-8 rounded font-bold hover:bg-gray-200 transition">Call Now</a>
+                <a href="mailto:info@printheps.com"
+                    class="border border-white py-3 px-8 rounded font-bold hover:bg-white hover:text-black transition">Email
+                    Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="font-bold text-xl text-white">Printheps<span class="text-red-400">.com</span></span>
+                </div>
+                <p class="text-sm text-gray-400">Your trusted digital printing partner since 2020.</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Contact</h3>
+                <p class="text-sm">+1-888-274-9279</p>
+                <p class="text-sm">info@printheps.com</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Quick Links</h3>
+                <ul class="text-sm space-y-1">
+                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                    <li><a href="services.html" class="hover:text-gray-400">Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Follow Us</h3>
+                <div class="flex gap-3">
+                    <a href="#" class="hover:text-gray-400"><svg class="w-5 h-5" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22.675 0h-21.35C.593 0 0 .592 0 1.326v21.348C0 23.406.593 24 1.325 24h11.49v-9.294h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.716-1.795 1.763v2.313h3.59l-.467 3.62h-3.124V24h6.117C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-gray-800 my-8" />
+        <p class="text-center text-sm text-gray-500">© 2025 Printheps.com. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Initialize AOS & Mobile Menu -->
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            easing: 'ease-out-cubic'
+        });
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function call(){
+            window.location.href ="tel:+1-888-274-9279"
+        }
+    </script>
+</body>
+
+</html>
