@@ -36,13 +36,13 @@
         <div
             class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-center md:justify-between items-center gap-3">
             <div class="flex items-center gap-4">
-                <a href="tel:+919815546976" class="flex items-center gap-1 hover:text-yellow-400 transition">
+                <a onclick="call()" class="flex items-center gap-1 hover:text-yellow-400 transition">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M2.003 5.884l8 4.8a1 1 0 001.118 0l8-4.8A1 1 0 0017 4H3a1 1 0 00-.997 1.884z"></path>
                         <path d="M18 8.118l-7.555 4.53a3 3 0 01-3.89 0L2 8.118V14a2 2 0 002 2h12a2 2 0 002-2V8.118z">
                         </path>
                     </svg>
-                    <span>+91 98155 46976</span>
+                    <span>+1-888-274-9279</span>
                 </a>
                 <a href="mailto:info@printassist.site" class="flex items-center gap-1 hover:text-red-400 transition">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -391,7 +391,7 @@
             <span class="inline-block bg-red-500 px-5 py-2 rounded-full font-bold mb-4">Ready to Print?</span>
             <h2 class="text-3xl sm:text-4xl font-bold mb-6">Get Your Free Quote Today</h2>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+919815546976"
+                <a  onclick="call()"
                     class="bg-white text-black py-3 px-8 rounded font-bold hover:bg-gray-200 transition">Call Now</a>
                 <a href="mailto:info@printassist.site"
                     class="border border-white py-3 px-8 rounded font-bold hover:bg-white hover:text-black transition">Email
@@ -453,6 +453,10 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        function call(){
+            window.location.href ="tel:+1-888-274-9279"
+        }
     </script>
 </body>
 
