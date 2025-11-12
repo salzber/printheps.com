@@ -26,6 +26,21 @@
         .aos-animate {
             transition-delay: 0ms !important;
         }
+         body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Prevent horizontal scroll */
+            width: 100%;
+        }
+
+        /* Prevent inner sections from overflowing on mobile */
+        section,
+        div,
+        img {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
     </style>
 </head>
 
@@ -369,3 +384,4 @@
 
 
 </html>
+
