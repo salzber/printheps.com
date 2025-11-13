@@ -26,7 +26,9 @@
         .aos-animate {
             transition-delay: 0ms !important;
         }
-         body {
+
+        html,
+        body {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -85,6 +87,7 @@
                     </li>
                     <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
                     <li><a href="services.html" class="hover:text-blue-600 transition">Services</a></li>
+                    <li><a href="printer-services.html" class="hover:text-blue-600 transition">Printer Services</a></li>
                     <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
                 </ul>
 
@@ -103,6 +106,7 @@
                     <li><a href="index.html" class="block py-2 text-black font-semibold">Home</a></li>
                     <li><a href="about.html" class="block py-2 hover:text-blue-600">About</a></li>
                     <li><a href="services.html" class="block py-2 hover:text-blue-600">Services</a></li>
+                    <li><a href="printer-services.html" class="block py-2 hover:text-blue-600">Pritner Services</a></li>
                     <li><a href="contact.html" class="block py-2 hover:text-blue-600">Contact</a></li>
                 </ul>
             </div>
@@ -223,8 +227,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <!-- Left Image -->
             <div class="relative rounded-tl-[120px] rounded-bl-[120px] overflow-hidden shadow-xl" data-aos="fade-right">
-                <img src="https://images.pexels.com/photos/7289716/pexels-photo-7289716.jpeg" alt="Advanced printing technology"
-                    class="w-full h-full object-cover" loading="lazy" />
+                <img src="https://images.pexels.com/photos/7289716/pexels-photo-7289716.jpeg"
+                    alt="Advanced printing technology" class="w-full h-full object-cover" loading="lazy" />
                 <div class="absolute -top-8 -left-8 w-20 h-20 bg-green-400 rounded-l-full"></div>
                 <div class="absolute -top-8 left-12 w-20 h-20 bg-yellow-400 rounded-r-full"></div>
                 <div class="absolute -bottom-10 -left-10 w-24 h-24 bg-red-500 rounded-full"></div>
@@ -335,7 +339,7 @@
             </div>
             <div>
                 <h3 class="font-bold mb-3">Contact</h3>
-                <p class="text-sm">+1-888-274-9279</p>
+                <p class="text-sm">+91 98155 46976</p>
                 <p class="text-sm">info@printheps.com</p>
             </div>
             <div>
@@ -376,12 +380,10 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        function call(){
-            window.location.href ="tel:+1-888-274-9279"
+        function call() {
+            window.location.href = "tel:+1-888-274-9279"
         }
     </script>
 </body>
 
-
 </html>
-

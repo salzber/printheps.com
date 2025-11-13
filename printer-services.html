@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Printer Help & Support - Get instant help with setup, drivers, troubleshooting, paper jams, and more. Call +1-888-274-9279 for 24/7 expert support." />
+    <title>Printer Help & Support | Printheps.com</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .aos-animate {
+            transition-delay: 0ms !important;
+        }
+
+        .container {
+            @apply w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+        }
+
+        section {
+            @apply px-4 sm:px-6 lg:px-8;
+        }
+
+        img {
+            @apply max-w-full h-auto;
+        }
+
+        input:focus, button:focus {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-black text-white py-2 text-xs md:text-sm">
+        <div class="container flex flex-col md:flex-row justify-center md:justify-between items-center gap-3">
+            <div class="flex items-center gap-4">
+                <a href="tel:+18882749279" class="flex items-center gap-1 hover:text-yellow-400 transition">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884l8 4.8a1 1 0 001.118 0l8-4.8A1 1 0 0017 4H3a1 1 0 00-.997 1.884z"></path>
+                        <path d="M18 8.118l-7.555 4.53a3 3 0 01-3.89 0L2 8.118V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                    <span>+1-888-274-9279</span>
+                </a>
+                <a href="mailto:info@printheps.com" class="flex items-center gap-1 hover:text-red-400 transition">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm-1.4 3.5L12 13 5.4 7.5H18.6z" />
+                    </svg>
+                    <span>info@printheps.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-blue-100 shadow-lg sticky top-0 z-50">
+        <div class="container">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <span class="font-bold text-xl text-gray-900">Printheps<span class="text-red-400">.com</span></span>
+                </div>
+
+                <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                    <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+                    <li><a href="services.html" class="hover:text-blue-600 transition">Services</a></li>
+                    <li><a href="printer-services.html" class="text-black font-semibold hover:text-blue-600 transition">Printer Services</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+                </ul>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-blue-100 border-t">
+                <ul class="px-4 py-3 space-y-2 text-gray-700 font-medium">
+                    <li><a href="index.html" class="block py-2">Home</a></li>
+                    <li><a href="about.html" class="block py-2 hover:text-blue-600">About</a></li>
+                    <li><a href="services.html" class="block py-2 hover:text-blue-600">Services</a></li>
+                    <li><a href="printer-services.html" class="block py-2 text-black font-semibold">Printer Services</a></li>
+                    <li><a href="contact.html" class="block py-2 hover:text-blue-600">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Printer Help Hero -->
+    <section class="relative py-16 md:py-20 text-center text-white overflow-hidden" data-aos="fade-up">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('data:image/jpeg;base64,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')"></div>
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="container relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3">Expert Printer Support</h2>
+            <p class="mb-6 text-gray-200 max-w-2xl mx-auto">Get instant help with setup, drivers, paper jams, or connectivity issues — 24/7 support available.</p>
+            <a href="tel:+18882749279" class="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition">
+                Call Now +1-888-274-9279
+            </a>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="py-12 bg-gray-50" data-aos="fade-up" data-aos-delay="100">
+        <div class="container">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="flex flex-col items-center p-5 bg-white rounded-lg shadow hover:shadow-xl transition text-center">
+                    <i class="fas fa-download text-blue-600 text-3xl mb-3"></i>
+                    <span class="text-sm font-semibold">Get Drivers</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-5 bg-white rounded-lg shadow hover:shadow-xl transition text-center">
+                    <i class="fas fa-check-circle text-green-600 text-3xl mb-3"></i>
+                    <span class="text-sm font-semibold">Warranty Check</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-5 bg-white rounded-lg shadow hover:shadow-xl transition text-center">
+                    <i class="fas fa-headset text-red-600 text-3xl mb-3"></i>
+                    <span class="text-sm font-semibold">Live Support</span>
+                </a>
+                <a href="#" class="flex flex-col items-center p-5 bg-white rounded-lg shadow hover:shadow-xl transition text-center">
+                    <i class="fas fa-comments text-purple-600 text-3xl mb-3"></i>
+                    <span class="text-sm font-semibold">Chat Help</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Banner -->
+    <section class="py-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="container">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-10 rounded-2xl shadow-xl">
+                <h3 class="text-2xl font-bold mb-3">Need Immediate Help?</h3>
+                <p class="mb-6 text-blue-100">Our experts can fix your printer remotely in minutes.</p>
+                <a href="tel:+18882749279" class="inline-block px-10 py-3 bg-white text-blue-700 font-bold rounded-full shadow hover:bg-gray-100 transition">
+                    Call Now: +1-888-274-9279
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup & Troubleshooting -->
+    <section class="py-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="container grid md:grid-cols-2 gap-10 items-center mb-12">
+            <img src="https://images.pexels.com/photos/7014416/pexels-photo-7014416.jpeg"
+                alt="Printer setup guide" class="rounded-xl shadow-lg" loading="lazy" />
+            <div class="bg-gray-100 p-6 rounded-xl">
+                <h2 class="text-xl font-bold mb-3">Printer Installation & Setup</h2>
+                <p class="text-gray-600 mb-4">Configure Wi-Fi, USB, or cloud printing with step-by-step guidance.</p>
+                <a href="tel:+18882749279" class="inline-block px-5 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">Start Setup</a>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="border rounded-xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-lg font-bold text-blue-600 mb-2">Driver Issues</h3>
+                <p class="text-sm text-gray-600 mb-4">Fix installation, update, or compatibility problems.</p>
+                <a href="tel:+18882749279" class="text-blue-600 font-semibold text-sm hover:underline">Fix Now</a>
+            </div>
+            <div class="border rounded-xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-lg font-bold mb-2">Paper Jams</h3>
+                <p class="text-sm text-gray-600 mb-4">Clear jams, fix feed errors, and prevent smudging.</p>
+                <a href="tel:+18882749279" class="text-blue-600 font-semibold text-sm hover:underline">Resolve</a>
+            </div>
+            <div class="border rounded-xl p-6 hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-lg font-bold mb-2">Printer Offline</h3>
+                <p class="text-sm text-gray-600 mb-4">Reconnect your printer to network or computer.</p>
+                <a href="tel:+18882749279" class="text-blue-600 font-semibold text-sm hover:underline">Reconnect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Identify Printer -->
+    <section class="py-12 bg-gray-50" data-aos="fade-up" data-aos-delay="400">
+        <div class="container bg-white border rounded-xl p-8">
+            <h3 class="text-xl font-bold mb-4">Identify Your Printer</h3>
+            <form class="flex flex-col sm:flex-row gap-4">
+                <input type="text" placeholder="Enter model or serial number" class="flex-grow border rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500" />
+                <button type="button" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">Detect</button>
+            </form>
+            <p class="text-xs text-gray-500 mt-3">We auto-detect your device for accurate support.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="contact" class="bg-black text-white py-20" data-aos="zoom-in">
+        <div class="container text-center">
+            <span class="inline-block bg-red-500 px-5 py-2 rounded-full font-bold mb-4">Ready to Fix?</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Call Our Printer Experts Now</h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+18882749279" class="bg-white text-black py-3 px-8 rounded font-bold hover:bg-gray-200 transition">Call Now</a>
+                <a href="mailto:info@printheps.com" class="border border-white py-3 px-8 rounded font-bold hover:bg-white hover:text-black transition">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="font-bold text-xl text-white">Printheps<span class="text-red-400">.com</span></span>
+                </div>
+                <p class="text-sm text-gray-400">Your trusted digital printing & support partner since 2020.</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Contact</h3>
+                <p class="text-sm">+91 98155 46976</p>
+                <p class="text-sm">info@printheps.com</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Quick Links</h3>
+                <ul class="text-sm space-y-1">
+                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                    <li><a href="services.html" class="hover:text-gray-400">Services</a></li>
+                    <li><a href="printer-services.html" class="hover:text-gray-400">Printer Help</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Follow Us</h3>
+                <div class="flex gap-3">
+                    <a href="#" class="hover:text-gray-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.675 0h-21.35C.593 0 0 .592 0 1.326v21.348C0 23.406.593 24 1.325 24h11.49v-9.294h-3.13v-3.62h3.13V8.413c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.716-1.795 1.763v2.313h3.59l-.467 3.62h-3.124V24h6.117C23.406 24 24 23.406 24 22.674V1.326C24 .592 23.406 0 22.675 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-gray-800 my-8 container" />
+        <p class="text-center text-sm text-gray-500 container">© 2025 Printheps.com. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic' });
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+
+</html>

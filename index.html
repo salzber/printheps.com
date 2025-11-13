@@ -26,7 +26,9 @@
         .aos-animate {
             transition-delay: 0ms !important;
         }
-         body {
+
+        html,
+        body {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -82,9 +84,11 @@
 
                 <!-- Desktop Menu -->
                 <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
-                    <li><a href="index.html" class="text-black font-semibold hover:text-blue-600 transition">Home</a></li>
+                    <li><a href="index.html" class="text-black font-semibold hover:text-blue-600 transition">Home</a>
+                    </li>
                     <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
                     <li><a href="services.html" class="hover:text-blue-600 transition">Services</a></li>
+                    <li><a href="printer-services.html" class="hover:text-blue-600 transition">Printer Services</a></li>
                     <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
                 </ul>
 
@@ -103,6 +107,7 @@
                     <li><a href="index.html" class="block py-2 text-black font-semibold">Home</a></li>
                     <li><a href="about.html" class="block py-2 hover:text-blue-600">About</a></li>
                     <li><a href="services.html" class="block py-2 hover:text-blue-600">Services</a></li>
+                    <li><a href="printer-services.html" class="block py-2 hover:text-blue-600">Pritner Services</a></li>
                     <li><a href="contact.html" class="block py-2 hover:text-blue-600">Contact</a></li>
                 </ul>
             </div>
@@ -351,7 +356,9 @@
                     <div class="w-6 h-6 bg-green-500 rounded-r-full"></div>
                 </div>
                 <p class="font-bold text-lg">"Best Quality Ever"</p>
-                <p class="text-gray-600 mt-3">Print Assist consistently exceeds our expectations! The quality of their business cards is outstanding, and their team provided invaluable advice on design. They're our go-to for all our printing needs.</p>
+                <p class="text-gray-600 mt-3">Print Assist consistently exceeds our expectations! The quality of their
+                    business cards is outstanding, and their team provided invaluable advice on design. They're our
+                    go-to for all our printing needs.</p>
                 <div class="flex items-center gap-4 mt-6">
                     <img src="https://randomuser.me/api/portraits/women/61.jpg" alt="Linda"
                         class="w-12 h-12 rounded-full object-cover" />
@@ -368,7 +375,9 @@
                     <div class="w-6 h-6 bg-green-500 rounded-r-full"></div>
                 </div>
                 <p class="font-bold text-lg">"Best service ever"</p>
-                <p class="text-gray-600 mt-3">We needed a large banner printed on a tight deadline for a trade show. Print Assist delivered a vibrant, high-quality banner with time to spare. Their customer service was exceptional, and they kept us informed throughout the process.</p>
+                <p class="text-gray-600 mt-3">We needed a large banner printed on a tight deadline for a trade show.
+                    Print Assist delivered a vibrant, high-quality banner with time to spare. Their customer service was
+                    exceptional, and they kept us informed throughout the process.</p>
                 <div class="flex items-center gap-4 mt-6">
                     <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Linda"
                         class="w-12 h-12 rounded-full object-cover" />
@@ -386,7 +395,9 @@
                     <div class="w-6 h-6 bg-green-500 rounded-r-full"></div>
                 </div>
                 <p class="font-bold text-lg">"Amazing end result"</p>
-                <p class="text-gray-600 mt-3">As a small business owner, I appreciate Print Assist's personalized approach. They helped me create custom promotional items that perfectly reflected my brand. The prints were crisp and the pricing was very competitive. Highly recommend!</p>
+                <p class="text-gray-600 mt-3">As a small business owner, I appreciate Print Assist's personalized
+                    approach. They helped me create custom promotional items that perfectly reflected my brand. The
+                    prints were crisp and the pricing was very competitive. Highly recommend!</p>
                 <div class="flex items-center gap-4 mt-6">
                     <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="Linda"
                         class="w-12 h-12 rounded-full object-cover" />
@@ -406,7 +417,7 @@
             <span class="inline-block bg-red-500 px-5 py-2 rounded-full font-bold mb-4">Ready to Print?</span>
             <h2 class="text-3xl sm:text-4xl font-bold mb-6">Get Your Free Quote Today</h2>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a  onclick="call()"
+                <a onclick="call()"
                     class="bg-white text-black py-3 px-8 rounded font-bold hover:bg-gray-200 transition">Call Now</a>
                 <a href="mailto:info@printassist.site"
                     class="border border-white py-3 px-8 rounded font-bold hover:bg-white hover:text-black transition">Email
@@ -421,13 +432,13 @@
             <div>
                 <div class="flex items-center gap-3 mb-4">
                     <span class="font-bold text-xl text-white">Printheps<span class="text-red-400">.com</span></span>
-                
+
                 </div>
                 <p class="text-sm text-gray-400">Your trusted digital printing partner since 2020.</p>
             </div>
             <div>
                 <h3 class="font-bold mb-3">Contact</h3>
-                <p class="text-sm">+1-888-274-9279</p>
+                <p class="text-sm">+91 98155 46976</p>
                 <p class="text-sm">info@printassist.site</p>
             </div>
             <div>
@@ -469,9 +480,14 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        function call(){
-            window.location.href ="tel:+1-888-274-9279"
+        function call() {
+            window.location.href = "tel:+1-888-274-9279"
         }
+
+        window.addEventListener('resize', () => {
+            document.body.style.overflowX = 'hidden';
+        });
+        document.body.style.overflowX = 'hidden';
     </script>
 </body>
 
